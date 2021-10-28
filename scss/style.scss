@@ -92,66 +92,67 @@ body::-webkit-scrollbar-thumb {
 
     .swiper {
         width: 100%;
-        height: 550px;
+
+        &-pagination-bullet-active {
+            background-color: #ffffff;
+        }
 
         &-slide {
             width: 100%;
-            height: 100%;
-            padding-left: 40px;
-            @extend %df-basic;
-            color: white;
+            height: 620px;
+
+            &__body{
+                width: 100%;
+                height: 530px;
+                padding-left: 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                color: white;
+            }
 
             &__picture-container {
-                width: 50%;
+                width: 55%;
 
                 div {
                     width: 100%;
+                    height: 75px;
                     display: flex;
                     justify-content: flex-start;
+                    align-items: flex-end;
                     margin-left: 50px;
+
+                    img{
+                        margin-left: 15px;
+                    }
                 }
             }
 
             &__picture {
-                width: 390px;
+                height: 420px;
+                margin-bottom: 30px;
             }
 
             &__picture-text {
                 font-weight: 600;
                 line-height: 20px;
                 text-align: right;
-                position: relative;
-                margin-top: 30px;
 
                 span {
                     font-weight: 400;
                     color: #DAD8D7;
                 }
-
-                &::after {
-                    content: "";
-                    width: 1px;
-                    height: 75px;
-                    background: white;
-                    position: absolute;
-                    top: -35px;
-                    right: -15px;
-                }
-
-                &::before {
-                    content: "";
-                    width: 8px;
-                    height: 8px;
-                    background: white;
-                    position: absolute;
-                    top: -35px;
-                    right: -18px;
-                    border-radius: 100px;
-                }
             }
 
             &__text-container {
-                width: 50%;
+                width: 45%;
+
+                div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                }
             }
 
             &__subtitle {
@@ -163,13 +164,46 @@ body::-webkit-scrollbar-thumb {
             &__headline {
                 font-size: 64px;
                 font-weight: 900;
+                margin-top: 30px;
             }
 
-            &__text{
+            &__text {
                 font-size: 16px;
                 font-weight: 300;
                 color: #DAD8D7;
                 line-height: 25px;
+                margin-top: 25px;
+            }
+
+            &__btn {
+                width: 135px;
+                height: 60px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                color: white;
+                background: #F4511F;
+                font-weight: 600;
+                border-radius: 10px;
+                transition: .3s;
+
+                &:hover {
+                    background: white;
+                    color: #F4511F;
+                }
+            }
+
+            &__link{
+                font-size: 16px;
+                color: white;
+
+                img{
+                    width: 14px;
+                    margin-left: 5px;
+                    margin-top: 2px;
+                }
             }
         }
     }

@@ -102,6 +102,8 @@ body::-webkit-scrollbar-thumb {
 
 .slider {
   width: 100%;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .slider .swiper {

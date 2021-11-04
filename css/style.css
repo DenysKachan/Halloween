@@ -1,4 +1,4 @@
-.header__body, .header__logo, .header__menu {
+.header__body, .header__logo, .header__menu, .category__sections, .about__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,7 +159,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .slider .swiper-slide__picture {
-  height: 420px;
+  width: 75%;
   margin-bottom: 30px;
 }
 
@@ -247,4 +247,114 @@ body::-webkit-scrollbar-thumb {
   width: 14px;
   margin-left: 5px;
   margin-top: 2px;
+}
+
+.category {
+  width: 100%;
+}
+
+.category__body {
+  width: 100%;
+  margin-top: 115px;
+}
+
+.category__headline {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+.category__sections {
+  width: 100%;
+}
+
+.category__section {
+  width: 20%;
+  text-align: center;
+}
+
+.category__section:hover .category__picture {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.category__picture {
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.category__monster-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.category__monster-description {
+  font-size: 16px;
+  color: #DAD8D7;
+  line-height: 25px;
+}
+
+.about {
+  width: 100%;
+}
+
+.about__body {
+  width: 100%;
+  margin-top: 115px;
+}
+
+.about__section {
+  width: 40%;
+}
+
+.about__headline {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  line-height: 50px;
+  margin-bottom: 48px;
+}
+
+.about__text {
+  font-size: 16px;
+  color: #DAD8D7;
+  line-height: 25px;
+  margin-bottom: 32px;
+}
+
+.about__btn {
+  width: 135px;
+  height: 60px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: white;
+  background: #F4511F;
+  font-weight: 600;
+  border-radius: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.about__btn:hover {
+  background: white;
+  color: #F4511F;
+}
+
+.about__picture {
+  width: 40%;
 }

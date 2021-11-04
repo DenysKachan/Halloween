@@ -130,7 +130,7 @@ body::-webkit-scrollbar-thumb {
             }
 
             &__picture {
-                height: 420px;
+                width: 75%;
                 margin-bottom: 30px;
             }
 
@@ -207,5 +207,108 @@ body::-webkit-scrollbar-thumb {
                 }
             }
         }
+    }
+}
+
+.category {
+    width: 100%;
+
+    &__body {
+        width: 100%;
+        margin-top: 115px;
+    }
+
+    &__headline {
+        font-size: 36px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    &__sections {
+        width: 100%;
+        @extend %df-basic;
+    }
+
+    &__section {
+        width: 20%;
+        text-align: center;
+
+        &:hover .category__picture {
+            transform: translateY(-10px);
+        }
+    }
+
+    &__picture {
+        width: 100%;
+        margin-bottom: 10px;
+        transition: .3s;
+    }
+
+    &__monster-name {
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    &__monster-description {
+        font-size: 16px;
+        color: #DAD8D7;
+        line-height: 25px;
+    }
+}
+
+.about {
+    width: 100%;
+
+    &__body {
+        width: 100%;
+        margin-top: 115px;
+        @extend %df-basic;
+    }
+
+    &__section {
+        width: 40%;
+    }
+
+    &__headline {
+        font-size: 36px;
+        font-weight: 600;
+        color: white;
+        line-height: 50px;
+        margin-bottom: 48px;
+    }
+
+    &__text {
+        font-size: 16px;
+        color: #DAD8D7;
+        line-height: 25px;
+        margin-bottom: 32px;
+    }
+
+    &__btn {
+        width: 135px;
+        height: 60px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: white;
+        background: #F4511F;
+        font-weight: 600;
+        border-radius: 10px;
+        transition: .3s;
+
+        &:hover {
+            background: white;
+            color: #F4511F;
+        }
+    }
+
+    &__picture {
+        width: 40%;
     }
 }
